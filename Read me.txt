@@ -1,0 +1,15 @@
+**********************************************************************************************
+
+1 rem is equal to 10px > It is set as 62.5% as a font-size in a root html.
+
+7-1 SCSS ARCHITECTURE is implemented as well as html resets.
+
+Grid scss file and variables for grid are included.
+
+Gulp packages are added as dependencies as well as configured gulp file for building process.
+
+Just run NPM INSTALL and all dependecies will be installed
+
+Then GULP SERVE to initiate the project in a browser as well as sass compiling process.
+
+**********************************************************************************************

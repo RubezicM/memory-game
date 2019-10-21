@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // this defines what 1rem is
+    font-size: 62.5%;  // 1 rem = 10px;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #746696c7;
+}
+#gameField {
+    border: 2px solid;
+    padding: 3px;
+    border-spacing: 1px;
+    background: black;
+    margin: 0 auto;
+}
+.stats {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+span:not(:last-child){
+    margin-right: 2rem;
+}
+
+.field {
+    z-index: 9999;
+}

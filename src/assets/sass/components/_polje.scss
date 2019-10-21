@@ -1,0 +1,47 @@
+.field {
+  width: 75px;
+  height: 75px;
+  //text-align: center;
+  position: relative;
+  perspective: 100rem;
+    -moz-perspective: 100rem;
+  &__side {
+    transition:  all .5s ease;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    //overflow: hidden;
+  }
+  &__front {
+    background-color: indianred;
+  }
+
+  &__back {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    transform: rotateY(180deg);
+    border: 2px solid black;
+  }
+}
+.field:hover .field__front{
+  
+}
+.field.kliknuto .field__front {
+  transform: rotateY(-180deg);
+}
+.field.kliknuto .field__back {
+  transform: rotateY(0);
+}
+.holder {
+  background: rgba(0,0,0,.9);
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+}
